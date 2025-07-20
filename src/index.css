@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "MajorMono";
+  src: url(assets/fonts/MajorMonoDisplay-Regular.ttf);
+}
+
+body {
+  font-family: "Poppins-Regular", sans-serif;
+  background-color: rgb(246, 242, 231);
+  padding: 0vw 4vw 0vw 4vw;
+}
+select {
+  font-family: "Poppins-Regular", sans-serif;
+  background-color: white;
+  color: black;
+  padding: 0.6rem 2.5rem 0.6rem 0.8rem;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23F4C300' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+}
+select:focus {
+  border: 1px solid white;
+  outline: none;
+}
+.choose_time_container {
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  min-width: 80%;
+  background-color: #ffffff;
+  padding: 40px 0px 40px 0px;
+}
+/* Option highlight */
+option:checked {
+  background-color: #f4c300;
+}
+/* Button Styling */
+button {
+  background-color: #000000;
+  padding: 20px 0;
+  font-size: 24px;
+  border-radius: 15px;
+  width: 100%;
+  font-family: "Poppins-Regular", sans-serif;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Container for Button (Fixed at Bottom with Side Padding) */
+.continue_container {
+  position: fixed;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  padding: 0 4vw; /* Matches body padding */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f2e7;
+}
+
+.title {
+  margin-top: 50px;
+  font-size: 36px;
+  padding: 0px 0px 30px 0px;
+  font-family: "Poppins-Medium";
+}
+.long_container {
+  min-width: 100%;
+  min-height: 20px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.big_container {
+  min-width: 100%;
+  min-height: 20px;
+  margin-bottom: 300px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 15px;
+  flex-direction: column;
+}
+.transformed_long_container {
+  margin-bottom: 10px;
+  padding: 5px;
+  min-width: 100%;
+  grid-column: span 2;
+  min-height: 20px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.vertical_container {
+  min-height: 20px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 15px;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+.all_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 2+ columns */
+}
+
+.price_container {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex: 2;
+  padding: 20px 40px 20px 40px;
+  flex-direction: column;
+}
+.total_price_container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-family: "Poppins-Medium", sans-serif;
+  flex: 2;
+  padding: 30px 40px 10px 40px;
+}
+.random_text {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0px 40px 20px 40px;
+}
+.row2 {
+  display: flex;
+}
+.landmark_container {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.intro_title {
+  font-family: "MajorMono";
+}
+.main_body {
+  background-color: #f6f2e7;
+  border-radius: 10px;
+}
+.logo {
+  background: #a59cee; /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+  position: fixed; /* Make the logo fixed at the top */
+  border-radius: 10px; /* Rounded corners for glass-like effect */
+  top: 10px; /* Position from the top */
+  left: 0; /* Position from the left */
+  margin-left: -20px; /* Adjust as needed */
+  z-index: 10; /* Ensure the logo stays on top of other elements */
+  width: auto; /* Adjust width if necessary */
+}
